@@ -12,7 +12,7 @@ class CategoriesPage extends HTMLElement {
     this.innerHTML = categories
       .map(category => `
         <category-item categoryId=${category.id} title=${category.title}></category-item>
-      `)
+      `).join('')
   }
 }
 
