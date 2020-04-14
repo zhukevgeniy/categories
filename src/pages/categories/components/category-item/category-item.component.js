@@ -1,4 +1,5 @@
 import { history } from "../../../../core/history";
+import './category-item.styles.css';
 
 class CategoryItem extends HTMLElement {
   constructor() {
@@ -10,7 +11,7 @@ class CategoryItem extends HTMLElement {
   connectedCallback() {
     const title = this.getAttribute('title');
 
-    this.innerHTML = `<div>${title}</div>`
+    this.innerHTML = `<div class="category-item__title">${title}</div>`
   }
 
   goToCategoryPage() {
